@@ -1,0 +1,89 @@
+/**
+ * Social Icons
+ */
+
+.socialicons{
+    ul{
+        padding-left: 0;
+        margin-bottom: 0;
+        display: inline-block;
+        list-style: none;
+        font-size: 0;
+
+        li{
+            display: inline-block;
+            list-style: none;
+            font-size: 18px;
+            margin: 0 10px;
+
+            &:first-child{
+                margin-left: 0;
+            }
+
+            &:last-child{
+                margin-right: 0;
+            }
+
+            a{
+                display: inline-block;
+                color: $heading-color;
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+.socialicons-radial{
+    ul{
+
+        li{
+            margin: 0 7px;
+
+            a{
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                color: $heading-color;
+                background: white;
+                font-size: 18px;
+                padding: 0;
+                width: 50px;
+                height: 50px;
+                text-align: center;
+                border: 1px solid $border-color;
+                border-radius: 100%;
+                line-height: 1;
+
+                i{
+                    line-height: 48px;
+                }
+
+                &:hover{
+                    background: $theme-color;
+                    border-color: $theme-color;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+    @media #{$sm-layout}{
+        ul{
+            li{
+                margin: 0 4px;
+                
+                a{
+                    height: 38px;
+                    width: 38px;
+                    font-size: 15px;
+
+                    i{
+                        line-height: 38px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,124 @@
+/**
+ * Footer
+ */
+
+.footer{
+
+    &-toparea{
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+
+    &-widget{
+        margin-top: 30px;
+
+        ul{
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style: none;
+
+            li{
+                list-style: none;
+            }
+        }
+
+        &-title{
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        }
+
+        &.widget-info{
+            letter-spacing: 0.4px;
+
+            ul{
+                li{
+                    color: $heading-color;
+                    margin-bottom: 10px;
+
+                    i{
+                        color: $theme-color;
+                        padding-right: 10px;
+                        font-size: 18px;
+                        vertical-align: middle;
+                    }
+
+                    a{
+                        color: $theme-color;
+
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.widget-links{
+            ul{
+                li{
+                    a{
+                        display: block;
+                        margin-bottom: 10px;
+                        color: $body-color;
+
+                        &:hover{
+                            color: $theme-color;
+                            padding-left: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        
+        &.widget-customerservice{
+            background: #454545;
+            text-align: center;
+            padding: 35px 20px;
+            border-radius: 7px;
+
+            .footer-widget-title{
+                color: #ffffff;
+                margin-bottom: 5px;
+            }
+
+            .info{
+                padding-bottom: 15px;
+                
+                h2, h3, h4, h5, h6{
+                    color: #a5a5a5;
+                    margin-bottom: 5px;
+                    
+                    a{
+                        color: $secondary-color;
+                    }
+                }
+            }
+
+            .payment{
+                padding-top: 20px;
+                border-top: 1px solid rgba(255,255,255,.1);
+
+                h6{
+                    margin-bottom: 15px;
+                    color: #ffffff;
+                }
+            }
+        }
+
+    }
+
+    &-copyright{
+        border-top: 1px solid $border-color;
+        padding: 20px 0;
+
+        .copyright{
+            margin-bottom: 0;
+
+            a{
+                color: $theme-color;
+                font-weight: 500;
+            }
+        }
+    }
+
+}

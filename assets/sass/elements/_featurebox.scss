@@ -1,0 +1,44 @@
+/**
+ * Featurebox
+ */
+
+.featurebox{
+    position: relative;
+    padding-left: 70px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    max-width: 320px;
+
+    i{
+        position: absolute;
+        left: 0;
+        top: 17px;
+        font-size: 55px;
+        display: inline-block;
+        height: auto;
+        height: 70px;
+        vertical-align: middle;
+        color: #aaaaaa;
+
+        &[class^="flaticon-"]:before,
+        &[class*=" flaticon-"]:before,
+        &[class^="flaticon-"]:after,
+        &[class*=" flaticon-"]:after {
+            vertical-align: text-bottom;
+        }
+    }
+
+    h5{
+        margin-bottom: 5px;
+    }
+
+    p{
+        font-size: 13px;
+        line-height: 23px;
+        margin-bottom: 0;
+    }
+
+    @media #{$md-layout}{
+        max-width: 98%;
+    }
+}

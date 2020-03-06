@@ -1,0 +1,130 @@
+/**
+ * Newsletter
+ */
+
+.newsletter {
+    display: flex;
+    justify-content: space-between;
+
+    &-title {
+        margin-right: 15px;
+        padding: 15px 0;
+
+        h2 {
+            font-weight: 500;
+            line-height: 1;
+            margin-bottom: 0;
+
+            span {
+                display: block;
+                color: $theme-color;
+            }
+        }
+    }
+
+    &-content {
+        flex-grow: 100;
+        padding: 15px 0;
+    }
+
+    &-form {
+        position: relative;
+        display: flex;
+        padding-left: 75px;
+        padding-right: 75px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 58px;
+            background-image: url(images/icons/newsletter-arrow.png);
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        input {
+            background: #ffffff;
+            border: 1px solid $border-color;
+            border-right-color: transparent;
+            border-radius: 7px 0 0 7px;
+        }
+
+        button {
+            background: $theme-color;
+            color: #ffffff;
+            border-radius: 0 7px 7px 0;
+            font-size: 16px;
+            font-weight: 700;
+            padding: 0 25px;
+            border-color: $theme-color;
+
+            &:hover {
+                background: $theme-color;
+                border-color: $theme-color;
+            }
+        }
+    }
+
+    &-socialicons {
+        padding: 15px 0;
+    }
+
+    .mailchimp-alerts {
+        padding-left: 75px;
+    }
+
+    @media #{$lg-layout} {
+        &-title {
+            h2 {
+                font-size: 24px;
+            }
+        }
+
+        &-form {
+            padding-right: 25px;
+        }
+    }
+
+    @media #{$md-layout} {
+        flex-wrap: wrap;
+
+        &-form {
+            padding-right: 0;
+        }
+    }
+
+    @media #{$sm-layout} {
+        flex-wrap: wrap;
+
+        &-title {
+            h2 {
+                span {
+                    display: inline-block;
+                }
+            }
+        }
+
+        &-form {
+            padding-right: 0;
+        }
+    }
+
+    @media #{$xs-layout} {
+        &-form {
+            padding-left: 0;
+
+            &::before {
+                display: none;
+            }
+        }
+
+        .mailchimp-alerts {
+            padding-left: 0;
+        }
+    }
+}

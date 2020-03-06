@@ -1,0 +1,51 @@
+/**
+ * Countdown
+ */
+
+.countdown{
+    padding-top: 15px;
+    
+    &-pack{
+        display: inline-block;
+        min-width: 52px;
+        min-height: 52px;
+        border: 1px solid $border-color;
+        border-radius: 5px;
+        text-align: center;
+        vertical-align: middle;
+        background: #f8f8f8;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin: 0 4px;
+        font-size: 24px;
+        color: $heading-color;
+        font-weight: 700;
+
+        &:first-child{
+            margin-left: 0;
+        }
+
+        &:last-child{
+            margin-right: 0;
+        }
+
+        h3{
+            margin-bottom: 0;
+        }
+
+        h6{
+            margin-bottom: 0;
+            color: $body-color;
+            font-size: 13px;
+            font-weight: 400;
+        }
+    }
+
+    @media #{$sm-layout}{
+        &-pack{
+            margin: 0 3px;
+            min-width: 48px;
+            min-height: 48px;
+        }
+    }
+}

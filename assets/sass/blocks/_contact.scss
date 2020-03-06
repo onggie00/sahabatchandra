@@ -1,0 +1,71 @@
+/**
+ * Contact Styles
+ */
+
+.contact-content {
+    padding-right: 80px;
+
+    .single-content {
+        border-top: 1px solid $border-color;
+        padding: 15px 0;
+        position: relative;
+        padding-left: 65px;
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+
+        &:first-child {
+            border-top: none;
+        }
+
+        a {
+            color: $body-color;
+
+            &:hover {
+                color: $theme-color;
+            }
+        }
+
+        &-icon {
+            font-size: 22px;
+            position: absolute;
+            left: 0;
+            top: 15px;
+            border: 1px solid #aaaaaa;
+            width: 50px;
+            line-height: 1;
+            text-align: center;
+            height: 50px;
+            border-radius: 100px;
+
+            i {
+                line-height: 48px;
+            }
+        }
+    }
+
+    @media #{$lg-layout} {
+        padding-right: 0;
+    }
+
+    @media #{$xs-layout} {
+        padding-right: 0;
+    }
+}
+
+.google-map {
+    min-height: 452px;
+}
+
+@media #{$md-layout} {
+    .google-map {
+        min-height: 380px;
+    }
+}
+
+@media #{$sm-layout} {
+    .google-map {
+        min-height: 320px;
+    }
+}

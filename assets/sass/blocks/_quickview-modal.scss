@@ -1,0 +1,67 @@
+/**
+ * Quickview Modal
+ */
+
+.quickmodal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    z-index: -2;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out 0s;
+    backface-visibility: hidden;
+    
+    &.is-visible{
+        opacity: 1;
+        visibility: visible;
+        z-index: 100;
+    }
+
+    .body-overlay{
+        background: rgba(#161515, 0.85);
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+    
+    &-inside{
+        position: relative;
+        background: #ffffff;
+        padding: 30px 15px;
+        max-height: 100%;
+        overflow-y: auto;
+        z-index: 2;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-50%);
+        transition: all 0.5s ease-in-out 0s;
+    }
+
+    &.is-visible &-inside{
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &-close{
+        position: absolute;
+        left: auto;
+        right: 0;
+        top: -10px;
+        z-index: 1;
+        border: none;
+        color: #fff;
+        font-size: 50px;
+        padding: 10px;
+    }
+}

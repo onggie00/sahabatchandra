@@ -1,0 +1,33 @@
+/**
+ * Brand Logo
+ */
+
+.brandlogo {
+	text-align: center;
+
+	a {
+		display: inline-block;
+		min-height: 140px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 15px 15px;
+		
+		img{
+			transition: all 0.3s ease-in-out 0s;
+		}
+
+		&:hover{
+			img{
+				transform: scale(1.05);
+			}
+		}
+	}
+
+	&.brandlogo-2{
+
+		a{
+			padding: 0 15px;
+		}
+	}
+}

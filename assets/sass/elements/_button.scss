@@ -1,0 +1,158 @@
+/**
+ * Button
+ */
+
+%button {
+    outline: none;
+    transition: all 0.3s ease-in-out 0s;
+    position: relative;
+    font-size: 17px;
+    line-height: 25px;
+    text-transform: capitalize;
+    font-weight: 500;
+    display: inline-block;
+    border: 1px solid $theme-color;
+    background: $theme-color;
+    padding: 9px 20px 11px 20px;
+    border-radius: 7px;
+    color: #ffffff;
+
+    i {
+        font-size: 21px;
+        margin-top: 5px;
+        vertical-align: middle;
+        color: #ffffff;
+    }
+
+    span {
+        display: inline-block;
+        color: #ffffff;
+    }
+
+    &:hover {
+        background: transparent;
+        color: $theme-color;
+
+        i {
+            color: $theme-color;
+        }
+
+        span {
+            color: $theme-color;
+        }
+    }
+
+    @media #{$md-layout} {
+        font-size: 14px;
+        padding: 5px 15px 8px 15px;
+        border-radius: 5px;
+
+        i {
+            font-size: 17px;
+        }
+    }
+
+    @media #{$sm-layout} {
+        font-size: 14px;
+        padding: 6px 15px 6px 15px;
+        border-radius: 5px;
+
+        i {
+            font-size: 17px;
+        }
+    }
+}
+
+.ho-button,
+.ho-button:link {
+    @extend %button;
+
+    &.ho-button-sm {
+        font-size: 14px;
+        padding: 6px 15px 6px 15px;
+        border-radius: 5px;
+
+        i {
+            font-size: 17px;
+        }
+    }
+}
+
+
+.ho-button-white,
+.ho-button-white:link {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: $theme-color;
+
+    i {
+        color: $theme-color;
+    }
+
+    span {
+        color: $theme-color;
+    }
+
+    &:hover {
+        border-color: $theme-color;
+
+        span {
+            color: $theme-color;
+        }
+    }
+}
+
+
+.ho-button-dark,
+.ho-button-dark:link {
+    background: $heading-color;
+    border-color: $heading-color;
+    color: #ffffff;
+
+    i {
+        color: #ffffff;
+    }
+
+    span {
+        color: #ffffff;
+    }
+
+    &:hover {
+        border-color: $theme-color;
+        background: $theme-color;
+
+        span {
+            color: #ffffff;
+        }
+    }
+}
+
+
+.ho-button-fullwidth,
+.ho-button-fullwidth:link {
+    display: block;
+    text-align: center;
+}
+
+
+/* Button Group */
+.ho-buttongroup {
+    margin-top: -10px;
+
+    .ho-button {
+        margin-top: 10px;
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+}
+
+
+.ho-readmore {
+    color: $heading-color;
+
+    &:hover {
+        color: $theme-color;
+    }
+}

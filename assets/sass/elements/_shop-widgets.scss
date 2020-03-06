@@ -1,0 +1,113 @@
+/**
+ * Shop Widgets
+ */
+
+.shop-widgets {
+
+    .widget-title {
+        font-size: 18px;
+        font-weight: 700;
+        color: $heading-color;
+        position: relative;
+        display: block;
+        text-transform: uppercase;
+    }
+
+    .single-widget {
+        ul {
+            padding-left: 0;
+            margin-bottom: 0;
+
+            li {
+                list-style: none;
+                display: block;
+            }
+        }
+    }
+
+    .shop-widgetbox {
+        border: 1px solid $border-color;
+
+        .single-widget {
+            padding: 20px;
+            border-top: 1px solid $border-color;
+
+            &:first-child {
+                border-top: 0;
+            }
+        }
+    }
+
+    .widget-categories {
+        border: 1px solid $border-color;
+        padding: 20px;
+
+        ul {
+            li {
+                padding: 8px 0;
+                border-top: 1px solid $border-color;
+
+                &:first-child {
+                    border-top: none;
+                }
+
+                &:last-child {
+                    padding-bottom: 0;
+                }
+
+                a {
+                    @include clearfix();
+                    text-transform: uppercase;
+                    color: $body-color;
+                    font-weight: 600;
+                    display: block;
+
+                    &:hover {
+                        color: $theme-color;
+                    }
+
+                    span {
+                        float: right;
+                        background: $theme-color;
+                        padding: 0 10px;
+                        border-radius: 5px;
+                        color: #fff;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    .widget-color {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                min-width: 50%;
+            }
+        }
+    }
+
+    .widget-filters {
+        .single-widget-range-price {
+            margin-top: 20px;
+            font-weight: 600;
+            color: $heading-color;
+
+            b{
+                color: $body-color;
+            }
+        }
+    }
+
+    @media #{$md-layout}{
+        margin-top: 50px;
+    }
+    
+    @media #{$sm-layout}{
+        margin-top: 50px;
+    }
+
+}

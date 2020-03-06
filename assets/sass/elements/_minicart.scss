@@ -1,0 +1,142 @@
+/**
+ * Minicart
+ */
+
+.minicart{
+    border-bottom: 2px solid $theme-color;
+    width: 350px;
+    background: #ffffff;
+    text-align: left;
+    padding: 20px;
+    padding-top: 30px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+
+    &-header{
+        max-height: 230px;
+        overflow-y: auto;
+    }
+
+    &-product{
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    &-productcontent{
+        h6{
+            font-weight: 400;
+            margin-bottom: 5px;
+
+            a{
+                color: $heading-color;
+
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+
+        .minicart-productprice{
+            color: $theme-color;
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+
+    &-productimage{
+        flex: 0 0 70px;
+        max-width: 70px;
+        margin-right: 20px;
+        position: relative;
+
+        a{
+            display: inline-block;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        .minicart-productquantity{
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: $theme-color;
+            height: 22px;
+            width: 27px;
+            line-height: 25px;
+            text-align: center;
+            border-radius: 100px;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+    }
+
+    &-productcontent{
+        padding-right: 10px;
+    }
+
+    &-productclose{
+        height: 30px;
+        width: auto;
+        padding: 0;
+        line-height: 1;
+        border: none;
+        font-size: 18px;
+        
+        &:hover{
+            color: $theme-color;
+        }
+    }
+
+    &-pricing{
+        padding-left: 0;
+        padding-top: 20px;
+        margin-bottom: 20px;
+        list-style: none;
+        border-top: 1px solid $border-color;
+        
+        li{
+            list-style: none;
+            display: block;
+            color: $body-color;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            @include clearfix();
+
+            span{
+                color: $theme-color;
+                float: right;
+            }
+        }
+    }
+
+    &-footer{
+        .ho-button + .ho-button{
+            margin-top: 10px;
+        }
+    }
+
+    @media #{$xs-layout}{
+        width: 290px;
+        padding: 15px;
+
+        &-productimage{
+            flex: 0 0 50px;
+            max-width: 50px;
+            margin-right: 10px;
+
+            .minicart-productquantity{
+                height: 22px;
+                width: 22px;
+                line-height: 24px;
+                font-size: 10px;
+            }
+        }
+
+        &-header{
+            padding-top: 10px;
+        }
+    }
+}

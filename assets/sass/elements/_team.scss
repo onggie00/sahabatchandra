@@ -1,0 +1,66 @@
+/**
+ * Team Member
+ */
+
+.team-member {
+    background: #f5f5f5;
+    padding-top: 6px;
+    margin-top: 30px;
+    transition: all 0.3s ease-in-out 0s;
+
+    img {
+        width: 100%;
+    }
+
+    .team-member-content {
+        text-align: center;
+        padding: 15px 15px;
+
+        h5 {
+            margin-bottom: 0;
+            font-weight: 400;
+            color: $heading-color;
+            font-size: 16px;
+            margin-bottom: 5px;
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        p {
+            margin-bottom: 0;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            transition: all 0.3s ease-in-out 0s;
+        }
+    }
+
+    &:hover {
+        background: $theme-color;
+
+        h5,
+        p {
+            color: #ffffff;
+        }
+    }
+}
+
+
+@media #{$lg-layout} {
+    .team-member {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media #{$md-layout} {
+    .team-member {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media #{$sm-layout} {
+    .team-member {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

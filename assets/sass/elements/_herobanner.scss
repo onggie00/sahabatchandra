@@ -1,0 +1,341 @@
+/**
+ * Hero Banner Area
+ */
+
+.herobanner{
+
+    &-single{
+        position: relative;
+        vertical-align: middle;
+        backface-visibility: hidden;
+    }
+
+    &-content{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%) translateZ(0);
+        padding: 15px 45px;
+        max-width: 500px;
+        backface-visibility: hidden;
+
+        h4{
+            letter-spacing: 6px;
+            color: #ababab;
+            font-weight: 700;
+        }
+
+        h1{
+            font-size: 52px;
+            font-weight: 500;
+            line-height: 1.1;
+
+            span{
+                color: $theme-color;
+                display: inline-block;
+            }
+        }
+
+        p{
+            font-size: 18px;
+            line-height: 27px;
+            color: $body-color;
+        }
+
+        .ho-button{
+            margin-top: 20px;
+        }
+    }
+
+    .slick-current &-box{
+        animation: crBounceIn 0.7s ease-in-out 0s 1 both;
+
+        @for $i from 1 through 5{
+            &:nth-child(#{$i}){
+                animation-delay: #{$i* 0.4s};
+            }
+        }
+    }
+
+    &-progress{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 5px;
+        width: 0;
+        background: rgba(49, 56, 72, 0.298);
+        background-color: rgba(49, 56, 72, 0.298);
+        z-index: 5;
+        animation: initial;
+    }
+    
+    .slick-current &-progress{
+        animation: hoFill 8000ms ease-in-out 0s 1 backwards;
+    }
+
+    &.slider-dots{
+        margin-bottom: 0;
+
+        .slick-dots{
+            backface-visibility: hidden;
+            left: 30px;
+            bottom: 25px;
+            width: calc(100% - 60px);
+        }
+    }
+
+    &.slider-navigation{
+
+        .slider-navigation-arrow{
+            visibility: hidden;
+            opacity: 0;
+
+            &.slider-navigation-prev{
+                left: 0;
+            }
+            
+            &.slider-navigation-next{
+                right: 0;
+            }
+        }
+
+        &:hover .slider-navigation-arrow{
+            visibility: visible;
+            opacity: 1;
+
+            &.slider-navigation-prev{
+                left: 2%;
+            }
+
+            &.slider-navigation-next{
+                right: 2%;
+            }
+        }
+    }
+
+
+    @media #{$md-layout}{
+        &-content{
+            padding: 30px;
+            max-width: 380px;
+
+            h4{
+                margin-bottom: 8px;
+                letter-spacing: 0;
+            }
+    
+            h1{
+                font-size: 32px;
+                margin-bottom: 8px;
+            }
+    
+            p{
+                font-size: 14px;
+                line-height: 24px;
+            }
+    
+            .ho-button{
+                margin-top: 0;
+            }
+        }
+
+        &.slider-dots{
+            .slick-dots{
+                bottom: 15px;
+            }
+        }
+    }
+
+    @media #{$sm-layout}{
+        &-content{
+            padding: 30px;
+            max-width: 380px;
+
+            h4{
+                margin-bottom: 8px;
+                letter-spacing: 0;
+            }
+    
+            h1{
+                font-size: 32px;
+                margin-bottom: 8px;
+            }
+    
+            p{
+                font-size: 14px;
+                line-height: 24px;
+            }
+    
+            .ho-button{
+                margin-top: 0;
+            }
+        }
+
+        &.slider-dots{
+            .slick-dots{
+                bottom: 15px;
+            }
+        }
+    }
+
+    @media #{$xs-layout}{
+        &-content{
+            position: relative;
+            padding: 20px;
+            padding-bottom: 50px;
+            transform: translate(0);
+            background: #ffffff;
+            border-top: 1px solid $border-color;
+
+            h1{
+                font-size: 28px;
+            }
+        }
+    }
+
+}
+
+
+/* Herobanner 2 */
+.herobanner-2{
+
+    & .herobanner{
+
+        &-content{
+            left: calc(50% - 600px);
+            max-width: 600px;
+
+            h4{
+                color: #cac8d8;
+            }
+
+            h1{
+                color: #ffffff;
+
+                span{
+                    color: $secondary-color;
+                }
+            }
+
+            p{
+                color: #ffffff;
+            }
+        }
+    }
+
+    @media #{$lg-layout}{
+        & .herobanner{
+
+            &-content{
+                left: calc(50% - 515px);
+
+                h4{
+                    margin-bottom: 12px;
+                }
+
+                h1{
+                    font-size: 36px;
+                    margin-bottom: 12px;
+                }
+
+                .ho-button{
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+
+    @media #{$md-layout}{
+        & .herobanner{
+
+            &-content{
+                left: calc(50% - 375px);
+                max-width: 450px;
+            }
+        }
+    }
+
+    @media #{$sm-layout}{
+        & .herobanner{
+
+            &-content{
+                position: relative;
+                left: auto;
+                max-width: 100%;
+                transform: translate(0);
+                background: $bg-grey;
+
+                h4{
+                    color: $body-color;
+                }
+    
+                h1{
+                    color: $heading-color;
+                }
+    
+                p{
+                    color: $heading-color;
+                }
+
+                .ho-button-white, .ho-button-white:link{
+                    border-color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+/* Herobanner 3 */
+.herobanner-3{
+
+    & .herobanner{
+
+        &-content{
+
+            h4{
+                color: #ffffff;
+            }
+
+            h1{
+                color: #ffffff;
+
+                span{
+                    color: #ffffff;
+                }
+            }
+
+            p{
+                color: #ffffff;
+            }
+        }
+
+        @media #{$xs-layout}{
+            &-content{
+                position: relative;
+                left: auto;
+                max-width: 100%;
+                transform: translate(0);
+
+                h4{
+                    color: $body-color;
+                }
+    
+                h1{
+                    color: $heading-color;
+
+                    span{
+                        color: $heading-color;
+                    }
+                }
+    
+                p{
+                    color: $heading-color;
+                }
+
+                .ho-button-white, .ho-button-white:link{
+                    border-color: $theme-color;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+/**
+ * Product Slider
+ */
+
+.product-slider{
+    margin-left: -15px;
+    margin-right: -15px;
+
+    .slick-list{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .product-slider-col{
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+}
+
+.recommended-products-slider, .recommended-products-slider-2{
+    .hoproduct-4{
+        margin-top: 30px;
+    }
+}
+
+.featured-product-slider {
+    padding-top: 48px;
+
+    @media #{$md-layout}{
+        padding-top: 20px;
+    }
+
+    @media #{$sm-layout}{
+        padding-top: 20px;
+    }
+}

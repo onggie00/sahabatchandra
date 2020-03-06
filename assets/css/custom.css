@@ -1,0 +1,160 @@
+/*********************************************************************************
+
+	Template Name: Haltico - Mega Store eCommerce Bootstrap 4 Template
+	Description: A perfect template to build beautiful and unique mega store eCommerce websites. It comes with nice and clean design.
+	Version: 3.0
+
+	Note: This is custom css.
+
+**********************************************************************************/
+
+.header-cart .header-carticon{
+	background: #ffffff;
+	border-color: 1px solid #CECECE;
+	color : #0B88EE;
+}
+.ho-navigation-3{
+	z-index: 0;
+	position: relative;
+	background-color: #F4F4F4;
+}
+
+.slider_button{
+	margin-top: 200px;
+}
+.newsletter-area{
+	margin-top: 50px;
+}
+.footer{
+	margin-top: 0px;
+}
+.footer_menu{
+	margin-top: 15px;
+	text-align: right;
+}
+.footer_menu a{
+	color : #066DBA;
+	padding:20px 10px 20px 10px;
+	border-radius: 10px;
+}
+.footer_menu a:hover{
+	background-color:#066DBA;
+	color:#ffffff;
+	padding:20px 10px 20px 10px;
+}
+.footer-bottomarea{
+	padding-top: 50px;
+}
+
+.team-area{
+	padding-bottom: 20px;
+}
+.ho-form{
+
+	font-family: Roboto,Arial,sans-serif,Times;
+}
+.ho-form h2{
+	font-size: 20pt;
+}
+.checkout-info{
+	background-color : #ffffff;
+	border: 1px solid #EAEAEA;
+}
+.ho-button{
+	color :#ffffff;
+}
+.small-title{
+	color:#066DBA;
+	font-weight: 400;
+}
+.checkout_price{
+	color:#066DBA;
+}
+.btn-menu{
+	background-color: transparent;
+	border:0px;
+}
+#chat-button{
+	font-size: 20pt;
+	color: #2687DF;
+	border:1px solid  #2687DF;
+	padding: 10px 10px 5px 10px;
+	border-radius:50%;
+}
+.chat-layout{
+	width:100px;
+	position:absolute;
+	top:40px;
+	right:0px;
+}
+.chat-header{
+	width:150px;
+	position:absolute;
+	top:5px;
+	text-align: center;
+	background-color: #FAFAFA;
+}
+.minicart{
+	z-index:10;
+}
+.notif-chat{
+	position:relative;
+	right:100px;
+	width:200px;
+	z-index:100;
+}
+.notify{
+	width:100%;
+}
+.foto-profil{
+	border-radius:50%;
+	width:50px;
+	height:50px;
+}
+.foto-profil img{
+	width:60px;
+	height:60px;
+}
+.chat-content{
+	width:100%;
+	height:50px;
+}
+.chat{
+	margin:5px 8px 0 0;
+}
+.header-circle{
+display: inline-block;
+position: relative;
+text-align: center;
+background: #fff;
+color: #454545;
+border-radius: 100%;
+font-size: 24px;
+font-weight: 700;
+height: 48px;
+width: 48px;
+line-height: 1;
+vertical-align: middle;
+border: 1px solid #fff;border-color: #0B88EE;
+}
+.input_qty{
+	width: 50px;
+	text-align: center;
+}
+
+.btn_alamat{
+	height:auto;
+	width:100%;
+	margin-bottom:5px;
+	line-height: 2;
+	padding: 10px;
+}
+.btn_alamat:hover{
+	background-color:#F7F7F7;
+}
+.combo_kurir{
+	margin-bottom: 10px;
+}
+.bupload:hover{
+	color:#ffffff;
+}

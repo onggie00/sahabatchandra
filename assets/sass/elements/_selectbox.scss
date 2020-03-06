@@ -1,0 +1,71 @@
+/**
+ * Selectbox
+ */
+.nice-select {
+    display: block;
+    width: 100%;
+    border-radius: 0px;
+    border: none;
+    float: none;
+    background-color: transparent;
+    border: 1px solid $border-color;
+    padding: 0 15px;
+
+    &::after {
+        content: "\f3d0";
+        font-family: 'Ionicons';
+        position: absolute;
+        left: auto;
+        right: 15px;
+        height: 35px;
+        line-height: 35px;
+        width: 8px;
+        border-radius: 100%;
+        display: inline-block;
+        font-size: 14px;
+        padding: 0;
+        border: none;
+        transform: rotate(0);
+        top: 7px;
+        bottom: auto;
+        transform-origin: 50% 50%;
+        text-align: center;
+    }
+
+    span.current {
+        display: block;
+        position: relative;
+        color: $body-color;
+        letter-spacing: 0;
+        font-size: 14px;
+        padding: 0;
+    }
+
+    .list {
+        width: 100%;
+        border-radius: 0;
+        margin-top: 0;
+        max-height: 280px;
+        overflow-y: auto;
+        z-index: 75;
+    }
+
+    .option {
+        line-height: 30px;
+        min-height: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    &.open {
+        &::after {
+            transform: rotate(180deg);
+        }
+    }
+
+    &:active,
+    &.open,
+    &:focus {
+        border-color: $theme-color;
+    }
+}

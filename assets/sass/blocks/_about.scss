@@ -1,0 +1,103 @@
+/**
+ * About Styles
+ */
+
+.about-image {
+    margin-right: 70px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.about-content {
+    background: #f5f5f5;
+    padding: 65px 50px;
+    margin-left: -150px;
+
+    h2 {
+        font-size: 60px;
+        color: #666666;
+        margin: 0 0 10px;
+        font-weight: 400;
+
+        span {
+            font-size: 100px;
+            font-weight: 700;
+            color: $theme-color;
+            line-height: 1;
+            display: block;
+        }
+    }
+
+    h5 {
+        border-bottom: 1px solid #e5e5e5;
+    }
+}
+
+@media #{$lg-layout} {
+    .about-content {
+        padding: 40px 50px;
+
+        h2 {
+            font-size: 50px;
+
+            span {
+                font-size: 75px;
+            }
+        }
+    }
+}
+
+
+@media #{$md-layout} {
+    .about-image {
+        margin-right: 0;
+    }
+
+    .about-content {
+        margin-left: 0;
+        padding: 40px 50px;
+
+        h2 {
+            font-size: 50px;
+
+            span {
+                font-size: 75px;
+            }
+        }
+    }
+}
+
+@media #{$sm-layout} {
+    .about-image {
+        margin-right: 0;
+    }
+
+    .about-content {
+        margin-left: 0;
+        padding: 40px 50px;
+
+        h2 {
+            font-size: 45px;
+
+            span {
+                font-size: 60px;
+            }
+        }
+    }
+}
+
+@media #{$xs-layout} {
+    .about-content {
+        padding: 25px 20px;
+
+        h2 {
+            font-size: 38px;
+
+            span {
+                font-size: 50px;
+            }
+        }
+    }
+}

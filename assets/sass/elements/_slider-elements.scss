@@ -1,0 +1,234 @@
+/**
+ * Slider Elements
+ */
+
+/* Slider Navigation */
+.slider-navigation{
+    position: relative;
+    .slider-navigation-arrow{
+        display: block;
+        width: 45px;
+        height: 45px;
+        line-height: 1;
+        background: $theme-color;
+        color: #ffffff;
+        border: 1px solid $theme-color;
+        border-radius: 100%;
+        text-align: center;
+        position: absolute;
+        z-index: 8;
+        cursor: pointer;
+        top: 50%;
+        font-size: 17px;
+        margin-top: -22.5px;
+        transition: all 0.4s ease-in-out 0s;
+
+        i{
+            line-height: 43px;
+        }
+
+        &.slider-navigation-prev{
+            left: 2%;
+            right: auto;
+        }
+
+        &.slider-navigation-next{
+            right: 2%;
+            left: auto;
+        }
+    }
+
+    @media #{$sm-layout}{
+        .slider-navigation-arrow{
+            height: 35px;
+            width: 35px;
+            font-size: 14px;
+
+            i{
+                line-height: 34px;
+            }
+        }
+    }
+}
+
+
+.slider-navigation-2{
+    position: relative;
+
+    .slider-navigation-arrow{
+        display: block;
+        width: auto;
+        height: 40px;
+        line-height: 1;
+        background: transparent;
+        color: $body-color;
+        text-align: center;
+        position: absolute;
+        z-index: 8;
+        cursor: pointer;
+        top: -48px;
+        font-size: 21px;
+        transition: all 0.4s ease-in-out 0s;
+
+        &:hover{
+            color: $theme-color;
+        }
+
+        i{
+            line-height: 40px;
+        }
+
+        &.slider-navigation-prev{
+            padding-right: 15px;
+            right: 37px;
+            left: auto;
+            &:after{
+                content: "";
+                position: absolute;
+                left: 99%;
+                top: 13px;
+                height: 12px;
+                width: 1px;
+                background: $body-color;
+            }
+        }
+        
+        &.slider-navigation-next{
+            right: 15px;
+            left: auto;
+            padding-left: 15px;
+        }
+    }
+
+    &.slider-navigation-2-m0{
+        .slider-navigation-arrow{
+            &.slider-navigation-prev{
+                right: 22px;
+            }
+            
+            &.slider-navigation-next{
+                right: 0;
+            }
+        }
+    }
+}
+
+
+/* Slider navigation 3 */
+.slider-navigation-3{
+
+    .slider-navigation-arrow{
+        display: inline-block;
+        line-height: 1;
+        color: $body-color;
+        position: absolute;
+        z-index: 8;
+        cursor: pointer;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all 0.4s ease-in-out 0s;
+        font-size: 21px;
+
+        i{
+            line-height: 43px;
+        }
+
+        &:hover{
+            color: $theme-color;
+        }
+
+        &.slider-navigation-prev{
+            left: 0;
+            padding-right: 15px;
+            right: auto;
+        }
+
+        &.slider-navigation-next{
+            right: 0;
+            padding-left: 15px;
+            left: auto;
+        }
+    }
+
+    &.slider-navigation-3-side{
+        .slider-navigation-arrow{
+            &.slider-navigation-prev{
+                left: 15px;
+                right: auto;
+                padding-left: 15px;
+            }
+    
+            &.slider-navigation-next{
+                padding-right: 15px;
+                right: 15px;
+                left: auto;
+            }
+        }
+    }
+
+    &.slider-navigation-3-side2{
+        .slider-navigation-arrow{
+            &.slider-navigation-prev{
+                left: 0;
+                right: auto;
+                padding-left: 15px;
+            }
+    
+            &.slider-navigation-next{
+                padding-right: 15px;
+                right: 0;
+                left: auto;
+            }
+        }
+    }
+
+}
+
+
+
+/* Slider Dots */
+.slider-dots{
+    position: relative;
+
+    .slick-dots{
+        height: auto;
+        z-index: 3;
+        text-align: left;
+        
+        li{
+            display: inline-block;
+            cursor: pointer;
+            font-size: 0;
+            width: 12px;
+            height: 12px;
+            background: #e0e0e0;
+            border-radius: 100%;
+            transition: all 300ms ease;
+            margin: 0 5px;
+            vertical-align: middle;
+
+            button{
+                display: none;
+            }
+
+            &:first-child{
+                margin-left: 0;
+            }
+
+            &:last-child{
+                margin-top: 0;
+            }
+
+            &.slick-active, &:hover{
+                background: $theme-color;
+            }
+        }
+    }
+
+    &.slider-dots-center{
+
+        .slick-dots{
+            text-align: center;
+        }
+    }
+}
